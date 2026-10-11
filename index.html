@@ -4,16 +4,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Professional, affordable websites for driving schools and local businesses in Auckland, New Zealand.">
+  <meta name="description" content="Professional websites for driving schools and local businesses in Auckland, New Zealand.">
   <title>Website Studio NZ | Business Websites</title>
+
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
       font-family: Arial, sans-serif;
-      color: #172033;
       line-height: 1.6;
+      color: #172033;
       background: #f7f9fc;
     }
+
     header {
       background: #10213b;
       color: white;
@@ -24,35 +31,70 @@
       flex-wrap: wrap;
       gap: 12px;
     }
-    header a { color: white; text-decoration: none; }
-    .brand { font-size: 21px; font-weight: bold; }
-    nav a { margin-left: 18px; }
+
+    header a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .brand {
+      font-size: 21px;
+      font-weight: bold;
+    }
+
+    nav a {
+      margin-left: 18px;
+    }
+
     .hero {
       background: #10213b;
       color: white;
       padding: 80px 7%;
       text-align: center;
     }
-    .hero h1 { font-size: clamp(32px, 5vw, 52px); line-height: 1.15; }
-    .hero p { max-width: 650px; margin: 20px auto; color: #d8e2f0; }
+
+    .hero h1 {
+      font-size: clamp(32px, 5vw, 52px);
+      line-height: 1.2;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 20px auto;
+      color: #d8e2f0;
+    }
+
     .button {
       display: inline-block;
       padding: 13px 22px;
+      margin: 8px 5px;
       border-radius: 7px;
       background: #38bdf8;
       color: #10213b;
       text-decoration: none;
       font-weight: bold;
-      margin: 8px 5px;
     }
-    .button.secondary {
+
+    .secondary {
       background: transparent;
       color: white;
       border: 1px solid #91a6c2;
     }
-    section { padding: 55px 7%; }
-    .section-title { text-align: center; margin-bottom: 28px; }
-    .section-title p { color: #657187; margin-top: 8px; }
+
+    section {
+      padding: 55px 7%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    .section-title p {
+      color: #657187;
+      margin-top: 8px;
+    }
+
     .cards {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -60,6 +102,7 @@
       max-width: 1050px;
       margin: auto;
     }
+
     .card {
       background: white;
       padding: 25px;
@@ -67,14 +110,32 @@
       border: 1px solid #e4e9f1;
       box-shadow: 0 5px 18px #10213b0a;
     }
-    .card h3 { margin-bottom: 10px; }
-    .card p { color: #58657a; }
-    .price { font-size: 30px; font-weight: bold; margin: 15px 0; }
-    .note { font-size: 13px; color: #657187; }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #58657a;
+      margin-bottom: 8px;
+    }
+
+    .price {
+      font-size: 30px;
+      font-weight: bold;
+      margin: 15px 0;
+    }
+
+    .note {
+      font-size: 13px;
+      color: #657187;
+    }
+
     .contact {
       background: #eaf2fb;
       text-align: center;
     }
+
     footer {
       background: #10213b;
       color: #d8e2f0;
@@ -82,80 +143,111 @@
       padding: 24px;
       font-size: 14px;
     }
+
     @media (max-width: 550px) {
-      header { flex-direction: column; }
-      nav a { margin: 0 7px; }
-      .hero { padding: 60px 6%; }
+      header {
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 0 7px;
+      }
+
+      .hero {
+        padding: 60px 6%;
+      }
     }
   </style>
 </head>
+
 <body>
   <header>
     <a class="brand" href="#">Website Studio NZ</a>
     <nav>
       <a href="#services">Services</a>
       <a href="#work">Demo</a>
+      <a href="#pricing">Pricing</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main>
-    <div class="hero">
+    <section class="hero">
       <h1>Websites That Help<br>Local Businesses Grow</h1>
-      <p>Modern, mobile-friendly websites for driving schools and small businesses in Auckland, New Zealand.</p>
+      <p>
+        Modern, mobile-friendly websites for driving schools,
+        restaurants and small businesses in Auckland, New Zealand.
+      </p>
       <a class="button" href="#work">View My Demo</a>
       <a class="button secondary" href="#contact">Get a Website</a>
-    </div>
+    </section>
 
     <section id="services">
       <div class="section-title">
         <h2>Website Design Services</h2>
-        <p>Simple, professional websites designed around your business.</p>
+        <p>Professional designs tailored to your business.</p>
       </div>
+
       <div class="cards">
         <article class="card">
-          <h3>🚗 Driving Schools</h3>
-          <p>Showcase driving lessons, instructor information, prices and contact details.</p>
+          <h3>Driving Schools</h3>
+          <p>Lesson information, instructor details, prices and contact options.</p>
         </article>
+
         <article class="card">
-          <h3>🧹 Cleaning Businesses</h3>
-          <p>Present your services, service areas and quote enquiry options.</p>
+          <h3>Cleaning Businesses</h3>
+          <p>Service descriptions, service areas and quote enquiries.</p>
         </article>
+
         <article class="card">
-          <h3>🍽️ Restaurants</h3>
-          <p>Display menus, opening hours, location and reservation enquiries.</p>
+          <h3>Restaurants</h3>
+          <p>Menus, opening hours, location and reservation enquiries.</p>
         </article>
       </div>
     </section>
 
     <section id="work">
       <div class="section-title">
-        <h2>Website Demo</h2>
+        <h2>My Website Demo</h2>
         <p>Explore an example of my website design.</p>
       </div>
+
       <div class="cards">
         <article class="card">
           <h3>Restaurant Website</h3>
-          <p>A sample website layout for a local restaurant. I can customise a design for your business.</p>
-          <a class="button" href="https://sujaysajan300-oss.github.io/restaurant-website/" target="_blank" rel="noopener noreferrer">View Live Demo</a>
+          <p>
+            A sample design that can be customised with a business's
+            own name, services and contact information.
+          </p>
+          <a
+            class="button"
+            href="https://sujaysajan300-oss.github.io/restaurant-website/"
+            target="_blank"
+            rel="noopener noreferrer">
+            View Live Demo
+          </a>
         </article>
       </div>
     </section>
 
     <section id="pricing">
       <div class="section-title">
-        <h2>Simple Starting Price</h2>
-        <p>Get in touch for a quote based on your requirements.</p>
+        <h2>Website Pricing</h2>
+        <p>Contact me for a quote tailored to your needs.</p>
       </div>
+
       <div class="cards">
         <article class="card">
           <h3>Starter Website</h3>
           <div class="price">From NZ$150</div>
-          <p>• Customised business design</p>
-          <p>• Services and contact information</p>
-          <p>• Mobile-friendly layout</p>
-          <p>• Publishing assistance</p>
-          <p class="note">Example starting price. Final price depends on the project. Domain, paid services and ongoing maintenance may cost extra.</p>
+          <p>Customised business design</p>
+          <p>Services and contact information</p>
+          <p>Mobile-friendly layout</p>
+          <p>Publishing assistance</p>
+          <p class="note">
+            Example starting price. Final pricing depends on the project.
+            Domains, paid services and ongoing maintenance may cost extra.
+          </p>
           <a class="button" href="#contact">Request a Quote</a>
         </article>
       </div>
@@ -164,17 +256,24 @@
     <section id="contact" class="contact">
       <div class="section-title">
         <h2>Let's Build Your Website</h2>
-        <p>Interested in a website for your driving school or business?</p>
-        <p>Contact me by email to discuss your project and pricing.</p>
+        <p>Need a website for your driving school or local business?</p>
+        <p>Send me an email to discuss your project.</p>
       </div>
-      <!-- Replace this placeholder with your business contact email. -->
-      <a class="button" href="mailto:sujaysajan300@gmail.com?subject=Website%20Enquiry">Email Me About a Website</a>
-      <p class="note">Replace sujaysajan300@gmail.com with an email address you can use for customer enquiries.</p>
+
+      <a
+        class="button"
+        href="mailto:sujaysajan300@gmail.com?subject=Website%20Design%20Enquiry">
+        Email Me About a Website
+      </a>
+
+      <p class="note">
+        Email: sujaysajan300@gmail.com
+      </p>
     </section>
   </main>
 
   <footer>
-    <p>Website Studio NZ · Auckland, New Zealand</p>
+    <p>Website Studio NZ | Auckland, New Zealand</p>
     <p>Demo designs are examples and are not official client websites.</p>
   </footer>
 </body>
